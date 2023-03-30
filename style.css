@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202733;
+}
+
+.generator {
+    height: 332px;
+    width: 540px;
+    border-radius: 15px;
+    background: #313A48;
+    box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#advice {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 4.08571px;
+    color: #53FFAA;
+    margin-top: 48px;
+}
+
+#answer {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #CEE3E9;
+    width: 444px;
+    margin-top: 24px;
+}
+
+#line {
+    position: absolute;
+    top: 467px;
+}
+
+#click-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #53FFAA;
+    background-image: url(./advice-generator-app-main/images/icon-dice.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 523px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    .generator {
+        height: 315px;
+        width: 343px;
+        border-radius: 10px;
+        position: relative;
+        top: 120px;
+        left: 16px;
+    }
+
+    .main {
+        display: block;
+    }
+
+    .divider {
+        content: url(./advice-generator-app-main/images/pattern-divider-mobile.svg);
+    }
+
+    #line {
+        top: 235px;
+    }
+
+    #advice {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 3.45714px;
+        color: #53FFAA;
+        margin-top: 40px;
+    }
+
+    #click-icon {
+        top: 283px;
+    }
+
+    #answer {
+        width: 295px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: -0.257143px;
+        color: #CEE3E9;
+    }
+}
